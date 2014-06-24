@@ -72,14 +72,14 @@ FEDORA_PACKAGES_TO_INSTALL = \
     protobuf-python \
     python-devel \
     python-dmidecode \
-	python-matplotlib \
-	python-netaddr \
-	python-netifaces \
-	python-pip \
-	python-prettytable \
-	python-qpid \
-	python-stevedore \
-	redis \
+    python-matplotlib \
+    python-netaddr \
+    python-netifaces \
+    python-pip \
+    python-prettytable \
+    python-qpid \
+    python-stevedore \
+    redis \
     rpmdevtools \
     ruby \
     ruby-devel \
@@ -116,6 +116,7 @@ PYTHON_PACKAGES_TO_INSTALL =  anyjson==0.3.3 \
                               mock==1.0.1 \
                               networkx==1.8.1 \
                               paramiko==1.12.0 \
+                              pep8==1.5.4 \
                               pip2pi==0.5.0 \
                               pss==1.39 \
                               psutil==1.2.1 \
@@ -145,7 +146,7 @@ PYTHON_PACKAGES_TO_INSTALL =  anyjson==0.3.3 \
 PYTHON_PACKAGES_TO_INSTALL_INDIRECT_DEPENDENCY =  astroid==1.0.1 \
                                                   Babel==1.3 \
                                                   ecdsa==0.10 \
-												  ipython==2.1.0 \
+                                                  ipython==2.1.0 \
                                                   iso8601==0.1.8 \
                                                   itsdangerous==0.23 \
                                                   logilab-common==0.60.0 \
@@ -154,7 +155,7 @@ PYTHON_PACKAGES_TO_INSTALL_INDIRECT_DEPENDENCY =  astroid==1.0.1 \
                                                   pip==1.4.1 \
                                                   pycrypto==2.6.1 \
                                                   PIL==1.1.7 \
-												  prettytable==0.7.2 \
+                                                  prettytable==0.7.2 \
                                                   pytz==2012d \
                                                   six==1.4.1 \
                                                   txAMQP==0.6.2 \
