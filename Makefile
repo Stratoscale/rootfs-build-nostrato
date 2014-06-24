@@ -31,8 +31,8 @@ $(ROOTFS): build/pipdownload.frozencorrectly
 	sudo mv $(ROOTFS).tmp $(ROOTFS)
 
 FEDORA_PACKAGES_TO_INSTALL = \
-	automake \
-	babeltrace \
+    automake \
+    babeltrace \
     boost-devel \
     busybox \
     clang \
@@ -45,6 +45,7 @@ FEDORA_PACKAGES_TO_INSTALL = \
     fontforge \
     gcc \
     gcc-c++ \
+    git \
     httpd-tools \
     java-1.7.0-openjdk \
     jsoncpp-devel \
