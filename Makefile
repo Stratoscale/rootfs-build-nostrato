@@ -145,6 +145,7 @@ PYTHON_PACKAGES_TO_INSTALL =  anyjson==0.3.3 \
 
 PYTHON_PACKAGES_TO_INSTALL_INDIRECT_DEPENDENCY =  astroid==1.0.1 \
                                                   Babel==1.3 \
+                                                  docopt==0.6.2 \
                                                   ecdsa==0.10 \
                                                   ipython==2.1.0 \
                                                   iso8601==0.1.8 \
