@@ -53,6 +53,7 @@ FEDORA_PACKAGES_TO_INSTALL = \
     kernel-devel \
     lcov \
     libcap \
+    libvirt-python \
     lttng-tools \
     lttng-ust \
     lttng-ust-devel \
