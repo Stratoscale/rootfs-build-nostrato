@@ -3,7 +3,10 @@ ROOTFS = build/root
 all: $(ROOTFS)
 
 submit: $(ROOTFS)
-	sudo solvent submitproduct rootfs $<
+	sudo -E solvent submitproduct rootfs $<
+
+approve: $(ROOTFS)
+	sudo -E solvent approve --product=rootfs
 
 clean:
 	sudo rm -fr build
@@ -15,6 +18,8 @@ build/pipdownload.frozencorrectly: Makefile
 	pip2tgz build/pipdownload $(PYTHON_PACKAGES_TO_INSTALL) $(PYTHON_PACKAGES_TO_INSTALL_INDIRECT_DEPENDENCY)
 	rm -f build/pipspecs.regexes
 	for spec in $(PYTHON_PACKAGES_TO_INSTALL) $(PYTHON_PACKAGES_TO_INSTALL_INDIRECT_DEPENDENCY); do echo $$spec | sed 's/==/-/' >> build/pipspecs.regexes; done
+	echo '\<distribute\>' >> build/pipspecs.regexes
+	echo '\<setuptools\>' >> build/pipspecs.regexes
 	rm -f build/unfrozen.violations
 	for filename in `ls build/pipdownload`; do echo $$filename | grep -f build/pipspecs.regexes || ( echo "filename $$filename was downloaded, but does not have a frozen spec" && echo $$filename > build/unfrozen.violations ); done
 	test ! -e build/unfrozen.violations
@@ -132,7 +137,7 @@ PYTHON_PACKAGES_TO_INSTALL =  anyjson==0.3.3 \
                               requests==2.1.0 \
                               requests-toolbelt==0.2.0 \
                               selenium==2.38.1 \
-                              setuptools==2.0 \
+                              setuptools==5.3 \
                               sh==1.09 \
                               simplejson==3.3.1 \
                               single==0.0.2 \
