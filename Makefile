@@ -46,6 +46,7 @@ FEDORA_PACKAGES_TO_INSTALL = \
     cscope \
     ctags \
     curl \
+    doxygen \
     fuseiso \
     fontforge \
     gcc \
