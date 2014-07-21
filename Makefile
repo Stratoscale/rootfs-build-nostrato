@@ -32,7 +32,7 @@ $(ROOTFS): build/pipdownload.frozencorrectly
 	sudo solvent bring --repositoryBasename=rootfs-basic --product=rootfs --destination=$(ROOTFS).tmp
 	echo "Installing development packages"
 	sudo chroot $(ROOTFS).tmp yum install $(FEDORA_PACKAGES_TO_INSTALL) --assumeyes
-	sudo chroot $(ROOTFS).tmp pip install $(PYTHON_PACKAGES_TO_INSTALL) $(PYTHON_PACKAGES_TO_INSTALL_INDIRECT_DEPENDENCY)
+	sudo ./chroot.sh $(ROOTFS).tmp pip install $(PYTHON_PACKAGES_TO_INSTALL) $(PYTHON_PACKAGES_TO_INSTALL_INDIRECT_DEPENDENCY)
 	sudo mv $(ROOTFS).tmp $(ROOTFS)
 
 FEDORA_PACKAGES_TO_INSTALL = \
