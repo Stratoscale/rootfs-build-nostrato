@@ -149,7 +149,9 @@ PYTHON_PACKAGES_TO_INSTALL =  anyjson==0.3.3 \
                               Twisted==13.2.0 \
                               vncdotool==0.8.0 \
                               whisper==0.9.12 \
-                              xmltodict==0.8.3
+                              xmltodict==0.8.3 \
+                              pyftpdlib==1.4.0 \
+                              ftputil==3.1 \
 
 PYTHON_PACKAGES_TO_INSTALL_INDIRECT_DEPENDENCY =  astroid==1.0.1 \
                                                   Babel==1.3 \
