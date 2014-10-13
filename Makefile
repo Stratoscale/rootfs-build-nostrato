@@ -168,7 +168,7 @@ PYTHON_PACKAGES_TO_INSTALL_INDIRECT_DEPENDENCY =  astroid==1.0.1 \
                                                   PIL==1.1.7 \
                                                   prettytable==0.7.2 \
                                                   pytz==2012d \
-                                                  six==1.4.1 \
+                                                  six==1.8.0 \
                                                   txAMQP==0.6.2 \
                                                   Werkzeug==0.9.4 \
                                                   wsgiref==0.1.2 \
