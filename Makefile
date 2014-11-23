@@ -135,7 +135,6 @@ PYTHON_PACKAGES_TO_INSTALL =  anyjson==0.3.3 \
                               python-cinderclient==1.0.7 \
                               python-novaclient==2.15.0 \
                               PyYAML==3.10 \
-                              pyzmq==14.0.1 \
                               requests==2.1.0 \
                               requests-toolbelt==0.2.0 \
                               selenium==2.38.1 \
